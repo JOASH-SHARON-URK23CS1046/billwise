@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* 🔵 Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header small {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* 🧩 Dashboard layout */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* 📦 Each section card */
+.card-panel {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  flex: 1;
+  min-width: 320px;
+  max-width: 360px;
+  transition: transform 0.2s ease;
+}
+
+.card-panel:hover {
+  transform: translateY(-4px);
+}
+
+.card-panel h2 {
+  color: #007bff;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* 🧾 Input fields */
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 12px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* 🔘 Buttons */
+.btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* 👥 Members list */
+.member-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.member-list li {
+  background: #eef5ff;
+  color: #007bff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  list-style-type: decimal;
+}
+
+/* 💰 Split section */
+.split-section p {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.split-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.split-list label {
+  font-size: 14px;
+}
+
+/* 📊 Summary Section */
+.summary {
+  font-size: 15px;
+  text-align: left;
+}
+
+.summary p {
+  margin: 6px 0;
+}
+
+.who-pays {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.empty-text {
+  color: #888;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* 📈 Chart Section */
+.chart-container {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn {
+  background: #ffc107;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+}
+
+/* 📱 Responsive layout */
+@media (max-width: 900px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-panel {
+    width: 90%;
+  }
+
+  .chart-container {
+    width: 90%;
+  }
+}
+/* 🌞 LIGHT & DARK THEME */
+.app.light {
+  background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+  color: #222;
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #0d1117, #1e1e2f);
+  color: #f0f0f0;
+}
+
+/* 🔵 Header for Login Page */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle {
+  background: white;
+  color: #007bff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #f8f9fa;
+}
+
+/* 🧭 Auth Container */
+.auth-container {
+  width: 360px;
+  margin: 100px auto;
+  padding: 30px 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app.dark .auth-container {
+  background: #1f1f2e;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #007bff;
+}
+
+/* Inputs */
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.app.dark .auth-container input {
+  background: #2a2a3c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Buttons */
+.auth-container .btn-primary {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.auth-container .btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-gray {
+  margin-top: 12px;
+  background: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.app.dark .btn-gray {
+  background: #333;
+  color: #ddd;
+}
+
+.small-muted {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.small-muted a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.small-muted a:hover {
+  text-decoration: underline;
+}
+.card-panel {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  margin: 30px auto;
+  width: 400px;
+}
+
+.member-list li {
+  background: #eef6ff;
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
